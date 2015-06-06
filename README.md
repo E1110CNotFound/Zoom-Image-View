@@ -1,1 +1,3 @@
 # Zoom-Image-View
+# step 1
+实现OnGlobalLayoutListener接口，当视图树发生改变时会调用回调函数onGlobalLayout，因此可在onGlobalLayout函数中对图片的大小进行初始化使其适应屏幕。由于onGlobalLayout可能会被调用多次，因此需要一个布尔类型的变量使得图片的大小只被初始化一次。
